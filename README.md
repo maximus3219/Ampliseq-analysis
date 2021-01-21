@@ -38,11 +38,12 @@ Different output files generated from the STAR aligner can be utilized for diffe
 - The bam file generated can be integrated with GATK Best Practices as downstream analysis to call, filter and annotate variants, as well as to prioritize variants that are more likely somatic mutations. However, this may not be practically useful, as the RNA panel covered in Ampliseq does not include all the clinically relevant genes e.g. KRAS. On the other hand, this information about the covered gene panel can supplement those from the DNA-analysis.
 - The SJ.out.tab contains information about the junctional reads at the exon-intron boundaries, which together with information from chimeric.out.junction and bam file, could determine any alternative splicing event e.g. MET exon14 skipping, EGFR VIII variant.
 
-
 STAR aligner:
 https://github.com/alexdobin/STAR
 
-Reference for STAR-Fusion:
+STAR-Fusion is one of the most accurate and fastest method for fusion transcript detection on cancer transcriptomes. It can bridge nicely with the output from STAR aligner.
+Original paper: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1842-9
+Github for STAR-Fusion:
 https://github.com/STAR-Fusion/STAR-Fusion/wiki
 
 The reference datasource for STAR-Fusion can be downloaded via:
