@@ -3,17 +3,7 @@
 This repository contains a collection of bash scripts written by Maximus Yeung as bioinformatics pipeline for DNA and RNA analysis on Ampliseq data.
 This is intended for internal use at Department of Pathology, Queen Mary Hospital, and the scripts are provided without being actively supported or maintained.
 
-[My image](https://github.com/maximus3219/Ampliseq-analysis/blob/main/DNA.jpg)
-
-
-<img
-src=“https://github.com/maximus3219/Ampliseq-analysis/blob/main/DNA.jpg”
-raw=true
-alt=“Subject Pronouns”
-style=“margin-right: 10px;”
-/>
-
-<img width=“964” alt=“DNA workflow” src=“https://github.com/maximus3219/Ampliseq-analysis/blob/main/DNA.jpg?raw=true” >
+![DNA analysis workflow](https://github.com/maximus3219/Ampliseq-analysis/blob/main/DNA.jpg)
 
 
 The DNA analysis pipeline requires the following software:
