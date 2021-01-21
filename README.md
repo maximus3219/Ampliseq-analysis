@@ -5,6 +5,14 @@ This is intended for internal use at Department of Pathology, Queen Mary Hospita
 
 [My image](https://github.com/maximus3219/Ampliseq-analysis/blob/main/DNA.jpg)
 
+
+<img
+src=“https://github.com/maximus3219/Ampliseq-analysis/blob/main/DNA.jpg”
+raw=true
+alt=“Subject Pronouns”
+style=“margin-right: 10px;”
+/>
+
 The DNA analysis pipeline requires the following software:
 - BWA MEM version 0.7.17
 - samtools version 1.11
