@@ -3,6 +3,8 @@
 This repository contains a collection of bash scripts written by Maximus Yeung as bioinformatics pipeline for DNA and RNA analysis on Ampliseq data.
 This is intended for internal use at Department of Pathology, Queen Mary Hospital, and the scripts are provided without being actively supported or maintained.
 
+# DNA somatic short variant calling pipeline
+
 ![DNA analysis workflow](https://github.com/maximus3219/Ampliseq-analysis/blob/main/DNA.jpg)
 
 
@@ -15,6 +17,11 @@ This pipeline follows the GATK best practice for somatic short variants (SNP + i
 https://gatk.broadinstitute.org/hc/en-us/articles/360035894731-Somatic-short-variant-discovery-SNVs-Indels-
 
 One point to emphasize is that, since an amplicon-based method was used for library preparation, the --disable-read-filter NotDuplicateReadFilter should be enabled to avoid removing those amplififed duplicated reads. However, rarely in one case, disabling the filter may lead to failure to call for some important variants e.g. ERBB2 p.770_771insYVMA.
+
+
+# RNA analysis pipeline
+
+![RNA analysis workflow](https://github.com/maximus3219/Ampliseq-analysis/blob/main/RNA.jpg)
 
 The RNA analysis pipeline requires the following software:
 - STAR version 2.7.7a
