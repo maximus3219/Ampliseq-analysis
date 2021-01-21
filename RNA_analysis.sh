@@ -66,6 +66,9 @@ samtools index $(dirname $file)/Output/$FILENAME/Aligned.sortedByCoord.out.bam;
 --ctat_genome_lib $CTAT_RESOURCE_LIB;
 
 # --min_total_reads, default 5 minimum read alignments required 
+# Cases which MET exon14 skipping was not expected, were called with total reads of 5-16, though these may be real cases that have not been confirmed with other methods.
+# On the other hand, EGFRVIII variants were called at read of 20
+# So a cut-off of 20 may be appropriate
 
 cat $(dirname $file)/Output/$FILENAME/Splicing/${filename}.cancer.introns > ${FILEBASE}/${filename}/Splicing/${filename}.cancer.introns.tsv;
 
