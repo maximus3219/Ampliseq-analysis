@@ -13,7 +13,7 @@ alt=“Subject Pronouns”
 style=“margin-right: 10px;”
 />
 
-<img width=“964” alt=“DNA workflow” src=“https://github.com/maximus3219/Ampliseq-analysis/blob/main/DNA.jpg?raw=true”>
+<img width=“964” alt=“DNA workflow” src=“https://github.com/maximus3219/Ampliseq-analysis/blob/main/DNA.jpg?raw=true” >
 
 
 The DNA analysis pipeline requires the following software:
