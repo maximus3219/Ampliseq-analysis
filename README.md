@@ -16,7 +16,7 @@ The DNA analysis pipeline requires the following software:
 This pipeline follows the GATK best practice for somatic short variants (SNP + indel) calling.
 https://gatk.broadinstitute.org/hc/en-us/articles/360035894731-Somatic-short-variant-discovery-SNVs-Indels-
 
-One point to emphasize is that, since an amplicon-based method was used for library preparation, the --disable-read-filter NotDuplicateReadFilter should be enabled to avoid removing those amplififed duplicated reads. However, rarely in one case, disabling the filter may lead to failure to call for some important variants e.g. ERBB2 p.770_771insYVMA.
+One point to emphasize is that, since an amplicon-based method was used for library preparation, the --disable-read-filter NotDuplicateReadFilter should be enabled to avoid removing those amplified duplicated reads. However, rarely in one case, disabling the filter may lead to failure to call for some important variants e.g. ERBB2 p.770_771insYVMA, for unknown reason.
 
 
 # RNA analysis pipeline
