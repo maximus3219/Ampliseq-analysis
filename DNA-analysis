@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 REFERENCE=~/Reference/Gencode/gencode.hg38.v36.primary_assembly.fa
 GERMLINE=~/Reference/Population_database/somatic-hg38_af-only-gnomad.hg38.vcf.gz
 ANNOTATION_FILE=~/Reference/Funocator_Datasource/funcotator_dataSources.v1.7.20200521s/
@@ -17,7 +16,6 @@ bwa mem -t 8 \
 -R "@RG\tID:$FILENAME\tLB:lib1\tPL:ILLUMINA\tPM:MINISEQ\tSM:$FILENAME\tPU:unit1" \
 $REFERENCE $file ${file//R1/R2} | samtools view -bS > ~/Documents/NGS/DNA_analysis/Output/${FILENAME}/${FILENAME}.bam;
 
-
 #Sort by coordinate
 echo "###Sort by coordinate...........................";
 samtools sort ~/Documents/NGS/DNA_analysis/Output/${FILENAME}/${FILENAME}.bam -o ~/Documents/NGS/DNA_analysis/Output/${FILENAME}/${FILENAME}_sorted.bam;
@@ -29,10 +27,7 @@ gatk MarkDuplicates \
 -M ~/Documents/NGS/DNA_analysis/Output/${FILENAME}/${FILENAME}_metrics.txt \
 -O ~/Documents/NGS/DNA_analysis/Output/${FILENAME}/${FILENAME}_sorted_marked.bam;
 
-#Mark duplicates
-#MarkDuplicates I=/home/maximus/Documents/NGS/RNA_analysis/Mutation2/work_dir/sorted.bam 
-#O=/home/maximus/Documents/NGS/RNA_analysis/Mutation2/work_dir/dedupped.bam 
-#CREATE_INDEX=true M=/home/maximus/Documents/NGS/RNA_analysis/Mutation2/work_dir/mark_duplicates_qc_metrics.txt
+#CREATE_INDEX=true 
 
 #Base recalibration
 gatk BaseRecalibrator \
@@ -104,9 +99,7 @@ gatk FilterMutectCalls \
 --min-slippage-length 13 \
 -O ~/Documents/NGS/DNA_analysis/Output/${FILENAME}/${FILENAME}_filtered.vcf.gz;
 
-
 # --unique-alt-read-count 100 \
-# zcat E5814C_filtered.vcf.gz | grep -v '#' | awk '$7=="PASS"' | wc -l
 
 #Annotate variants
 echo "################Annotating variants.......................";
@@ -131,6 +124,5 @@ awk -v OFS='\t' '{print$1,$2,$3,$4,$5,$9,$12,$13,$14,$7,$6,$8,$10,$11}'> \
 cat ~/Reference/Heading.tsv ~/Documents/NGS/DNA_analysis/Output/${FILENAME}/${FILENAME}_combined_temp.tsv > ~/Documents/NGS/DNA_analysis/Output/${FILENAME}/${FILENAME}_Final.tsv;
 
 rm -f ~/Documents/NGS/DNA_analysis/Output/${FILENAME}/*_temp.tsv;
-
 
 done
