@@ -3,7 +3,7 @@
 This repository contains a collection of bash scripts written by Maximus Yeung as bioinformatics pipeline for DNA and RNA analysis on Ampliseq data.
 This is intended for internal use at Department of Pathology, Queen Mary Hospital, and the scripts are provided without being actively supported or maintained.
 
-[My image](maximus3219.github.com/repository/DNA.jpg)
+[My image](https://github.com/maximus3219/Ampliseq-analysis/blob/main/DNA.jpg)
 
 The DNA analysis pipeline requires the following software:
 - BWA MEM version 0.7.17
