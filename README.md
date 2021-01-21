@@ -9,6 +9,9 @@ The DNA analysis pipeline requires the following software:
 - GATK version 4.1.9
 
 This pipeline follows the GATK best practice for somatic short variants (SNP + indel) calling.
+https://gatk.broadinstitute.org/hc/en-us/articles/360035894731-Somatic-short-variant-discovery-SNVs-Indels-
+
+One point to emphasize is that, since an amplicon-based method was used for library preparation, the --disable-read-filter NotDuplicateReadFilter should be enabled to avoid removing those amplififed duplicated reads. However, rarely in one case, disabling the filter may lead to failure to call for some important variants e.g. ERBB2 p.770_771insYVMA.
 
 The RNA analysis pipeline requires the following software:
 - STAR version 2.7.7a
@@ -31,3 +34,6 @@ Download the one of GRCh38 with latest gencode version - GRCh38_gencode_v33_CTAT
 
 Reference for CTAT-splicing:
 https://github.com/NCIP/CTAT-SPLICING/wiki
+
+
+Some of the above softwares depends on Python and/or R scripts and some of their related packages or modules. They should be downloaded according to instructions.
