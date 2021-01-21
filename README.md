@@ -13,6 +13,9 @@ alt=“Subject Pronouns”
 style=“margin-right: 10px;”
 />
 
+<img width=“964” alt=“java 8 and prio java 8  array review example” src=“https://github.com/maximus3219/Ampliseq-analysis/blob/main/DNA.jpg”>
+
+
 The DNA analysis pipeline requires the following software:
 - BWA MEM version 0.7.17
 - samtools version 1.11
