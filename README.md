@@ -31,6 +31,14 @@ The RNA analysis pipeline requires the following software:
 - GATK version 4.1.9
 - Open Cravat version 2.2
 
+
+STAR is the most widely used splice-aware aligner for RNA-seq data, and is shown to be of high accuracy and ultra-fast (outperforms other aligners by more than a factor of 50 in mapping speed), but it is memory intensive (a minimum of 32GB RAM is recommended).
+Different output files generated from the STAR aligner can be utilized for different downstream analysis.
+- The chimeric.out.junction contains information about the reads and location at the breakpoint, and can be utilized to find out any fusion
+- The bam file generated can be integrated with GATK Best Practices as downstream analysis to call, filter and annotate variants, as well as to prioritize variants that are more likely somatic mutations. However, this may not be practically useful, as the RNA panel covered in Ampliseq does not include all the clinically relevant genes e.g. KRAS. On the other hand, this information about the covered gene panel can supplement those from the DNA-analysis.
+- The SJ.out.tab contains information about the junctional reads at the exon-intron boundaries, which together with information from chimeric.out.junction and bam file, could determine any alternative splicing event e.g. MET exon14 skipping, EGFR VIII variant.
+
+
 STAR aligner:
 https://github.com/alexdobin/STAR
 
