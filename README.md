@@ -1,4 +1,4 @@
-# RNA-analysis
+# Ampliseq-analysis
 
 This repository contains a collection of bash scripts written by Maximus Yeung as bioinformatics pipeline for DNA and RNA analysis on Ampliseq data.
 This is intended for internal use at Department of Pathology, Queen Mary Hospital, and the scripts are provided without being actively supported or maintained.
