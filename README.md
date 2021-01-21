@@ -5,7 +5,7 @@ This is intended for internal use at Department of Pathology, Queen Mary Hospita
 
 # DNA somatic short variant calling pipeline
 
-![DNA analysis workflow](https://github.com/maximus3219/Ampliseq-analysis/blob/main/DNA.jpg)
+![DNA analysis workflow](https://github.com/maximus3219/Ampliseq-analysis/blob/main/images/DNA.jpg)
 
 
 The DNA analysis pipeline requires the following software:
@@ -21,7 +21,7 @@ One point to emphasize is that, since an amplicon-based method was used for libr
 
 # RNA analysis pipeline
 
-![RNA analysis workflow](https://github.com/maximus3219/Ampliseq-analysis/blob/main/RNA.jpg)
+![RNA analysis workflow](https://github.com/maximus3219/Ampliseq-analysis/blob/main/images/RNA.jpg)
 
 The RNA analysis pipeline requires the following software:
 - STAR version 2.7.7a
