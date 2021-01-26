@@ -30,6 +30,7 @@ The RNA analysis pipeline requires the following software:
 - samtools version 1.11
 - GATK version 4.1.9
 - Open Cravat version 2.2
+- Arriba version 2.1.0
 
 
 STAR is the most widely used splice-aware aligner for RNA-seq data, and is shown to be of high accuracy and ultra-fast (outperforms other aligners by more than a factor of 50 in mapping speed), but it is memory intensive (a minimum of 32GB RAM is recommended).
@@ -53,6 +54,9 @@ Download the one of GRCh38 with latest gencode version - GRCh38_gencode_v33_CTAT
 
 Reference for CTAT-splicing:
 https://github.com/NCIP/CTAT-SPLICING/wiki
+
+Arriba is an award-winning command-line tool for the detection of gene fusions from RNA-Seq data in a clinical research setting. Apart from gene fusions, it can detect other structural rearrangements with potential clinical relevance, such as internal tandem duplications, whole exon duplications, truncations of genes (i.e., breakpoints in introns and intergenic regions). However, it cannot detect intragenic deletions, as they are difficult to distinguish from ordinary splicing.
+https://arriba.readthedocs.io/en/latest/
 
 
 Some of the above softwares depends on Python and/or R scripts and some of their related packages or modules. They should be downloaded according to instructions.
