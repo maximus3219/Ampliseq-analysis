@@ -21,7 +21,7 @@ One point to emphasize is that, since an amplicon-based method was used for libr
 
 # RNA analysis pipeline
 
-![RNA analysis workflow](https://github.com/maximus3219/Ampliseq-analysis/blob/main/images/RNA.jpg)
+[RNA analysis workflow](https://github.com/maximus3219/Ampliseq-analysis/blob/main/images/RNA.jpg)
 
 The RNA analysis pipeline requires the following software:
 - STAR version 2.7.7a
